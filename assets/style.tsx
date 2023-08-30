@@ -19,19 +19,21 @@ const styles = StyleSheet.create({
     },
     searchBarContainer: {
         backgroundColor: colors.background,
-        position: "relative",
-        padding: 30,
         marginTop: 48,
+    },
+    searchBarContainerInner:{
+        backgroundColor: colors.background,
+        position: "relative",
     },
     searchIcon: {
         position: "absolute",
-        right: 40,
-        top: 48,
+        right: 20,
+        top: 22,
         color: colors.textPrimary,
     },
     searchBar: {
         borderWidth: 1,
-        borderColor: colors.border,
+        height:58,
         color: colors.textPrimary,
         padding: 10,
     },
@@ -105,11 +107,29 @@ const styles = StyleSheet.create({
         width: 50,
         aspectRatio: 1
     },
+    imageIcon: {
+        width: 90,
+        height: 90,
+    },
+    todayAbsoluteContainer: {
+        position: 'absolute',
+        zIndex: 1,
+        right: 30,
+        top: 30,
+        textAlign:'center'
+    },
+    todayWeatherType: {
+        textAlign:'center',
+        marginTop: 8,
+        color: colors.textPrimary,
+        fontFamily: 'Roboto-Bold',
+        fontSize:18,
+
+    },
     noResults: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-
     },
     noResultsTextContainer: {
         position: 'absolute',
@@ -122,7 +142,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop:24,
+        marginTop: 24,
     }
 
 

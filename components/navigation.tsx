@@ -31,8 +31,8 @@ const RouteNavigation = () => {
                 screenOptions={() => ({
                     headerShown: false,
                     tabBarStyle: {
-
                         backgroundColor: '#121212',
+                        borderWidth:0
                     },
                 })}
             >

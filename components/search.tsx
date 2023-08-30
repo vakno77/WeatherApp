@@ -17,15 +17,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
     return (
         <View style={styles.searchBarContainer}>
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={styles.searchIcon} />
-            <TextInput
-                placeholderTextColor={'#fff'}
-                style={styles.searchBar}
-                placeholder="Search..."
-                value={searchText}
-                onChangeText={setSearchText}
-                onSubmitEditing={handleSearch}
-            ></TextInput>
+            <View style={styles.searchBarContainerInner}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} style={styles.searchIcon} />
+                <TextInput
+                    placeholderTextColor={'#fff'}
+                    style={styles.searchBar}
+                    placeholder="Search..."
+                    value={searchText}
+                    onChangeText={setSearchText}
+                    onSubmitEditing={handleSearch}
+                ></TextInput>
+            </View>
         </View>
     );
 };

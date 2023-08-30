@@ -72,9 +72,11 @@ const WeatherToday: React.FC<WeatherDataTodayProps> = ({weatherData}) => {
                                 </View>)
                             }
                         </View>
-                        <View>TEST</View>
-                        <Image style={styles.image}
-                                           source={iconSource}/>
+                        <View style={styles.todayAbsoluteContainer}>
+                            <Image style={styles.imageIcon}
+                                   source={iconSource}/>
+                            <Text style={styles.todayWeatherType}>{weatherType}</Text>
+                        </View>
                         <ImageBackground
                             source={imageSource}
                             style={styles.backgroundImage}
