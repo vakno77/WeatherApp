@@ -28,6 +28,7 @@ export default function App() {
     return (
         <View style={styles.appContainer}>
             <RouteNavigation />
+            <View>TEST</View>
             <StatusBar style="auto" />
         </View>
     );
