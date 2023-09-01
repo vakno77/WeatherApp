@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import {StatusBar, View} from 'react-native';
 import RouteNavigation from "./components/navigation";
 import * as Font from 'expo-font';
 import styles from "./assets/style";
@@ -27,8 +26,8 @@ export default function App() {
 
     return (
         <View style={styles.appContainer}>
+            <StatusBar/>
             <RouteNavigation />
-            <StatusBar style="auto" />
         </View>
     );
 }

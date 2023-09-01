@@ -16,10 +16,10 @@ const styles = StyleSheet.create({
         margin: 'auto',
         height: "100%",
         width: '100%',
+        overflow:'hidden'
     },
     searchBarContainer: {
         backgroundColor: colors.background,
-        marginTop: 48,
     },
     searchBarContainerInner:{
         backgroundColor: colors.background,
